@@ -10,12 +10,12 @@ import java.util.ArrayList;
  *
  * @author Administrator
  */
-public class EightQueens {
+public class NQueens {
 
     int N = 6;
     int[][] board;
 
-    public EightQueens() {
+    public NQueens() {
         board = new int[N][N];
     }
 
@@ -99,7 +99,7 @@ public class EightQueens {
     }
     
     public static void main(String[] args) {
-        EightQueens queen = new EightQueens();
+        NQueens queen = new NQueens();
         queen.runAlgorithm();
     }
 }

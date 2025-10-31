@@ -21,7 +21,6 @@ public class ReverseDelete {
         {0, 7, 5, 15, 0, 8, 9},
         {0, 0, 0, 6, 8, 0, 11},
         {0, 0, 0, 0, 9, 11, 0}
-
     };
 
     public ArrayList<Edge> MSTEdges;
@@ -71,9 +70,7 @@ public class ReverseDelete {
     private boolean isDisconnected(Edge e) {
         boolean[] visited = new boolean[graph.length];
         int start = e.v1;
-
         DFS(start, visited);
-
         int countVisited = 0;
         for (boolean v : visited) {
             if (v) {
